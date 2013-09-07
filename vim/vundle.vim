@@ -12,35 +12,12 @@ Bundle 'nathanaelkane/vim-command-w'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'kien/ctrlp.vim'
-Bundle 'tomtom/tcomment_vim'
 Bundle 'nanotech/jellybeans.vim'
-Bundle 'sjl/vitality.vim'
-
-Bundle 'kana/vim-textobj-user'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-rake'
-Bundle 'tpope/vim-haml'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'pangloss/vim-javascript'
-Bundle 'walm/jshint.vim'
-Bundle 'juvenn/mustache.vim'
-
-Bundle 'tapichu/Align'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'tsaleh/vim-matchit'
 Bundle 'tpope/vim-endwise'
-
-Bundle 'vim-ruby/vim-ruby'
 Bundle 'ervandew/supertab'
-Bundle 'vim-scripts/Specky'
-Bundle 'vim-scripts/VimClojure'
-Bundle 'scrooloose/syntastic'
-
 Bundle 'elixir-lang/vim-elixir'
-Bundle 'rizzatti/funcoo.vim'
-Bundle 'rizzatti/dash.vim'
 
 filetype plugin indent on     " required!
 "
