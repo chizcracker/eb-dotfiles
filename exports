@@ -15,3 +15,5 @@ export PS1='$(_git_prompt_info)[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$
 # load
 export PATH="/usr/local/opt/maven/bin:$HOME/.bin:/usr/local/bin:$PATH"
 
+# set ca certs
+export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt

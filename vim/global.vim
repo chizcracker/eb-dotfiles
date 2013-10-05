@@ -26,6 +26,7 @@ set tags+=.tags                             " Set ctags
 set tags+=.gemtags                             " Set ctags
 set clipboard+=unnamed                     " Set system clipboard
 scriptencoding utf-8
+"set regexpengine=1                        " The new regex engine is probably creating slowdowns.
 
 " INDENTATION
 "-------------------------------------------------
@@ -88,9 +89,10 @@ set laststatus=2
 " Save on FocusLost
 au FocusLost * :silent! wall
 
-" Use % to jump to matching begin/end of blocks as well as brackets/parens
-runtime macros/matchit.vim
-
 " REMOVE TRAILING WHITESPACE
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Change cursor type for iTerm2
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
