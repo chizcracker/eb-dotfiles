@@ -1,6 +1,3 @@
-[user]
-	email = ebenoist@groupon.com
-  name = Erik Benoist
 [alias]
   co = checkout
   st = status
@@ -21,3 +18,5 @@
   whitespace = nowarn
 [web]
   browser = open
+[include]
+  path = ~/.gituser
