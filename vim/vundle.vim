@@ -18,6 +18,8 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-endwise'
 Bundle 'ervandew/supertab'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
 
 filetype plugin indent on     " required!
 "

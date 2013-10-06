@@ -10,6 +10,10 @@ alias vi='vim'
 alias rake="noglob rake"
 alias curl="noglob curl"
 
+# set warning before jumping machines
+alias ssh="warning & ssh"
+alias psql="warning & psql"
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
 

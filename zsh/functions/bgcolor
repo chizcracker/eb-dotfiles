@@ -1,0 +1,23 @@
+setBackground() {
+  osascript -e "tell application \"iTerm\"
+    set current_terminal to (current terminal)
+    tell current_terminal
+      set current_session to (current session)
+      tell current_session
+        set background color to $1
+      end tell
+    end tell
+  end tell"
+}
+
+danger() {
+  setBackground "{15000, 0, 10}"
+}
+
+warning() {
+  setBackground "{2100, 6900, 11200}"
+}
+
+normal() {
+  setBackground "{0, 0, 0}"
+}

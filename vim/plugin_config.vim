@@ -19,14 +19,6 @@ let NERDTreeIgnore=['\.$', '\~$']
 " Highlight ruby operators
 let ruby_operators = 1
 
-" Turn off rails bits of statusbar
-"let g:rails_statusline=0
-
-" VimClojure:
-let vimclojure#HighlightBuiltins = 1
-let vimclojure#ParenRainbow = 1
-let vimclojure#DynamicHighlighting = 1
-
 " NERDCommenter:
 let NERDDefaultNesting = 0
 let NERDRemoveExtraSpaces = 1
@@ -44,15 +36,4 @@ let g:ctrlp_max_height = 40
 let g:ctrlp_clear_cache_on_exit   = 1
 let g:ctrlp_working_path_mode     = "ra"
 let g:ctrlp_match_window_reversed = 0
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-
-" if has("unix")
-  " let g:ctrlp_user_command = {
-        " \   'types': {
-        " \       1: ['.git/', 'cd %s && git ls-files']
-        " \   },
-        " \   'fallback': 'find %s -type f'
-        " \ }
-" endif
-
 
