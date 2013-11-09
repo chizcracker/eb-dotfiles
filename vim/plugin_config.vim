@@ -13,7 +13,7 @@ let NERDTreeShowHidden = 1
 
 " Don't hijack NETRW
 let NERDTreeHijackNetrw = 0
-let NERDTreeIgnore=['\.$', '\~$']
+let NERDTreeIgnore=['\.$', '\~$', '.DS_Store']
 
 " RubyAndRails:
 " Highlight ruby operators

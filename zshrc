@@ -86,3 +86,4 @@ zstyle ':completion:*:ssh:*' hosts $knownhosts
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
