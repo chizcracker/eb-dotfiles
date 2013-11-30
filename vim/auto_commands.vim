@@ -14,9 +14,7 @@ endfunction
 
 autocmd BufWritePre *.rb,*.haml :call <SID>StripTrailingWhitespaces()
 
-autocmd BufRead,BufNewFile {Gemfile,Rakefile,Capfile,*.rake,config.ru}     set ft=ruby
+autocmd BufRead,BufNewFile {Gemfile,Rakefile,Capfile,*.rake,config.ru,*.god}     set ft=ruby
 autocmd BufRead,BufNewFile {*.md,*.mkd,*.markdown}                         set ft=markdown
 autocmd BufRead,BufNewFile {COMMIT_EDITMSG}                                set ft=gitcommit
-
-autocmd FileType javascript setlocal sw=4 ts=4 sts=4 textwidth=79
 

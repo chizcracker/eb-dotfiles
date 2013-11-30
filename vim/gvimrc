@@ -24,10 +24,6 @@ set guioptions-=rL
 " Don't flick cursor.
 set guicursor=a:blinkon0
 
-" Show trailing whitepace and spaces before a tab:
-":autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
-":autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
-
 " Color:
 set bg=dark
 set background=dark

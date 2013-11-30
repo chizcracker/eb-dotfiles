@@ -67,11 +67,6 @@ set undofile
 set undolevels=1000
 set undoreload=10000
 
-" CODE FOLDING
-"-------------------------------------------------
-set foldmethod=indent                      " Automatically fold based on syntax
-set foldlevelstart=99                      " Expand all folds by default
-
 " SEARCHING
 "-------------------------------------------------
 set ignorecase                             " Ignore case by default when searching
@@ -83,8 +78,8 @@ colorscheme jellybeans-lucas
 
 " CUSTOM STATUS LINE
 "-------------------------------------------------
-set statusline=%F%m%r%h%w\ [TYPE=%Y]\ \ \ \ \ \ [POS=%2l,%2v][%p%%]\ \ \ \ \ \ [LEN=%L]
-set laststatus=2
+" set statusline=%F%m%r%h%w\ [TYPE=%Y]\ \ \ \ \ \ [POS=%2l,%2v][%p%%]\ \ \ \ \ \ [LEN=%L]
+" set laststatus=2
 
 " Save on FocusLost
 au FocusLost * :silent! wall
