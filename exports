@@ -17,3 +17,4 @@ export PATH="/usr/local/opt/maven/bin:$HOME/.bin:/usr/local/bin:/usr/local/sbin:
 
 # set ca certs
 export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
+
