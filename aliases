@@ -5,6 +5,7 @@ alias ...='../..'
 alias ll='ls -al'
 alias lh='ls -Alh'
 alias vi='vim'
+alias vim='mvim -v'
 
 # noglob!
 alias rake="noglob rake"
