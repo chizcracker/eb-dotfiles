@@ -24,12 +24,6 @@ let NERDDefaultNesting = 0
 let NERDRemoveExtraSpaces = 1
 let NERDSpaceDelims = 1
 
-" INDENT GUIDES
-" "-------------------------------------------------
-let g:indent_guides_auto_colors = 0
-let g:indent_guides_color_change_percent = 3
-let g:indent_guides_enable_on_vim_startup = 1
-
 " CtrlP
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 let g:ctrlp_max_height = 40
@@ -38,5 +32,8 @@ let g:ctrlp_working_path_mode     = "ra"
 let g:ctrlp_match_window_reversed = 0
 
 " SYNTAX
-let g:syntastic_ruby_checkers=['rubylint']
+" let g:syntastic_ruby_checkers=['rubylint']
 
+
+" Rspec
+let g:rspec_runner = "os_x_iterm"

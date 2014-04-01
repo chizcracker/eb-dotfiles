@@ -43,6 +43,13 @@ setopt prompt_subst
 # prompt
 export PS1='[${SSH_CONNECTION+"%n@%m:"}%~] '
 
+# title
+precmd() {
+  tab_label=${SSH_CONNECTION+PWD/${HOME}/\~} # use 'relative' path
+  echo -ne "\e]2;${tab_label}\a" # set window title to full string
+  echo -ne "\e]1;${tab_label: -24}\a" # set tab title to rightmost 24 characters
+}
+
 # ignore duplicate history entries
 setopt histignoredups
 
@@ -87,3 +94,5 @@ zstyle ':completion:*:ssh:*' hosts $knownhosts
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

@@ -6,15 +6,14 @@ alias ll='ls -al'
 alias lh='ls -Alh'
 alias vi='vim'
 alias vim='mvim -v'
+alias tar='gtar'
 
 # noglob!
 alias rake="noglob rake"
 alias curl="noglob curl"
 
 # set warning before jumping machines
-alias ssh="warning & ssh"
-alias psql="warning & psql"
-
+#
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
 

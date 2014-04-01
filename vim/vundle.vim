@@ -7,7 +7,6 @@ call vundle#rc()
 " let Vundle manage Vundle required!
 Bundle 'gmarik/vundle'
 Bundle 'mileszs/ack.vim'
-Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'kien/ctrlp.vim'
@@ -16,8 +15,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-endwise'
 Bundle 'ervandew/supertab'
 Bundle 'elixir-lang/vim-elixir'
-Bundle 'rizzatti/funcoo.vim'
-Bundle 'rizzatti/dash.vim'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'thoughtbot/vim-rspec'
 
 filetype plugin indent on     " required!
 "

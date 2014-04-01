@@ -22,11 +22,10 @@ set linespace=3                            " Spacing between lines
 set noswapfile                             " Disable creation of *.swp files
 set t_Co=256                               " Support for xterm with 256 colors (gets overriden in .gvimrc)
 set autoread                               " Autoload files
-set tags+=.tags                             " Set ctags
-set tags+=.gemtags                             " Set ctags
+set tags+=.tags                            " Set ctags
+set tags+=.gemtags                         " Set ctags
 set clipboard+=unnamed                     " Set system clipboard
 scriptencoding utf-8
-"set regexpengine=1                        " The new regex engine is probably creating slowdowns.
 
 " INDENTATION
 "-------------------------------------------------
@@ -64,7 +63,7 @@ set directory=$HOME/.vim/backup
 "-------------------------------------------------
 set undodir=$HOME/.vim/undodir
 set undofile
-set undolevels=1000
+set undolevels=10000
 set undoreload=10000
 
 " SEARCHING
@@ -74,12 +73,7 @@ set smartcase                              " Switch to case sensitive mode if ne
 
 " DEFAULT COLOURS FOR VIM - GVIMRC OVERRIDES THIS
 "-------------------------------------------------
-colorscheme jellybeans-lucas
-
-" CUSTOM STATUS LINE
-"-------------------------------------------------
-" set statusline=%F%m%r%h%w\ [TYPE=%Y]\ \ \ \ \ \ [POS=%2l,%2v][%p%%]\ \ \ \ \ \ [LEN=%L]
-" set laststatus=2
+colorscheme jellybeans
 
 " Save on FocusLost
 au FocusLost * :silent! wall

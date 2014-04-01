@@ -7,6 +7,7 @@
   br = branch
   l = log --graph --pretty=format:'%an: %s - %Cred%h%Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   slog = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
+  slognc = log --pretty=format:'%h %ad %an%d %s' --date=short
 [color]
   diff = auto
   status = auto

@@ -24,9 +24,6 @@ imap <Leader>w <esc>:w<cr>
 map <Leader>q :qall<cr>
 imap <Leader>q <esc>:qall<cr>
 
-" JSLint for current javascript file
-nmap <F4> :w<CR>:make<CR>:cw<CR>
-
 " CtrlP
 nnoremap <Leader>t :CtrlP<CR>
 nnoremap <Leader>ff :CtrlPClearCache<CR>
@@ -59,5 +56,8 @@ vmap <leader>gw y:let @/=escape(@", '\\[]$^*.')<CR>:set hls<CR>:silent Ggrep -F 
 
 map <Leader>rt :!/usr/local/bin/ctags -R -f .tags
 
-"Jump to DASH
-nmap <silent> <leader>d <Plug>DashSearch
+" Rspec
+map <Leader>rf :call RunCurrentSpecFile()<CR>
+map <Leader>rl :call RunNearestSpec()<CR>
+map <Leader>rr :call RunLastSpec()<CR>
+map <Leader>ra :call RunAllSpecs()<CR>
