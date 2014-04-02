@@ -24,7 +24,3 @@ set guioptions-=rL
 " Don't flick cursor.
 set guicursor=a:blinkon0
 
-" Color:
-set bg=dark
-set background=dark
-set transparency=5

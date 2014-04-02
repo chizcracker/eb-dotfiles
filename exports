@@ -10,9 +10,9 @@ export PATH="$HOME/.rbenv/bin:/usr/local/opt/maven/bin:$HOME/.bin:/usr/local/bin
 
 # prompt
 if [ -n "$SSH_CLIENT" ]; then
-  export PS1="\[$Green\]\$(vcprompt -f '[%b%u%m]')\[$Color_Off\][\[$Yellow\]\h:\w\[$Color_Off\]] "
+  export PS1="\[$Green\]\$(vcprompt -f '[%b%u%m]')\[$Color_Off\][\[$Yellow\]\h:\w\[$Color_Off\]]❥ "
 else
-  export PS1="\[$Green\]\$(vcprompt -f '[%b%u%m]')\[$Color_Off\][\[$Yellow\]\w\[$Color_Off\]] "
+  export PS1="\[$Green\]\$(vcprompt -f '[%b%u%m]')\[$Color_Off\][\[$Yellow\]\w\[$Color_Off\]]❥ "
 fi
 
 # Change tab title

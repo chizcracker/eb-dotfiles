@@ -73,10 +73,17 @@ set smartcase                              " Switch to case sensitive mode if ne
 
 " DEFAULT COLOURS FOR VIM - GVIMRC OVERRIDES THIS
 "-------------------------------------------------
-colorscheme jellybeans
-set background=dark
-let g:jellybeans_use_lowcolor_black = 0
 
+colorscheme jellybeans-lucas
+set background=dark
+let g:jellybeans_background_color = 000000
+let g:jellybeans_background_color_256 = 0
+highlight Normal ctermbg=NONE
+highlight nonText ctermbg=NONE
+
+if has("mouse")
+  set mouse=a
+endif
 
 " Save on FocusLost
 au FocusLost * :silent! wall
