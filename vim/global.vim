@@ -74,6 +74,9 @@ set smartcase                              " Switch to case sensitive mode if ne
 " DEFAULT COLOURS FOR VIM - GVIMRC OVERRIDES THIS
 "-------------------------------------------------
 colorscheme jellybeans
+set background=dark
+let g:jellybeans_use_lowcolor_black = 0
+
 
 " Save on FocusLost
 au FocusLost * :silent! wall

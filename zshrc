@@ -62,7 +62,6 @@ else
 fi
 SAVEHIST=4096
 
-# look for ey config in project dirs
 export EYRC=./.eyrc
 
 # automatically pushd
@@ -76,10 +75,6 @@ setopt cdablevars
 
 # Enable extended globbing
 setopt EXTENDED_GLOB
-
-# auto correct kill
-zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
-zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,command'
 
 local knownhosts
 knownhosts=( ${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[0-9]*}%%\ *}%%,*} )
@@ -95,4 +90,6 @@ zstyle ':completion:*:ssh:*' hosts $knownhosts
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+eval "$(rbenv init -)"
+

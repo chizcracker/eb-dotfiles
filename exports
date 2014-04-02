@@ -6,15 +6,23 @@ export EC2_HOME="/usr/local/Library/LinkedKegs/ec2-api-tools/jars"
 # enable colored output from ls, etc
 export CLICOLOR=1
 
-# expand functions in the prompt
-setopt prompt_subst
+export PATH="$HOME/.rbenv/bin:/usr/local/opt/maven/bin:$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # prompt
-export PS1='$(_git_prompt_info)[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%~%{$reset_color%}] '
+if [ -n "$SSH_CLIENT" ]; then
+  export PS1="\[$Green\]\$(vcprompt -f '[%b%u%m]')\[$Color_Off\][\[$Yellow\]\h:\w\[$Color_Off\]] "
+else
+  export PS1="\[$Green\]\$(vcprompt -f '[%b%u%m]')\[$Color_Off\][\[$Yellow\]\w\[$Color_Off\]] "
+fi
+
+# Change tab title
+PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
 
 # load
-export PATH="/usr/local/opt/maven/bin:$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="$HOME/.rbenv/shims:/usr/local/opt/maven/bin:$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # set ca certs
 export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
+
+export CDPATH=".:$HOME/development/"
 
