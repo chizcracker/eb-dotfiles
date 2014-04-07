@@ -36,4 +36,4 @@ let g:ctrlp_match_window_reversed = 0
 
 
 " Rspec
-let g:rspec_runner = "os_x_iterm"
+let g:rspec_command = "!bundle exec rspec -fd -d {spec}"

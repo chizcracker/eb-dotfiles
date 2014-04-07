@@ -9,8 +9,6 @@ alias vim='mvim -v'
 alias tar='gtar'
 
 # noglob!
-alias rake="noglob rake"
-alias curl="noglob curl"
 alias be="bundle exec"
 
 # set warning before jumping machines
