@@ -30,30 +30,16 @@ nnoremap <Leader>ff :CtrlPClearCache<CR>
 noremap <Leader>fb :CtrlPBuffer<CR>
 
 " Copy/Paste
-vmap <Leader>c "+yy
-map <Leader>v "+p
 map <Leader>cf :let @*=expand("%")<CR>
 map <Leader>cff :let @*=expand("%:p")<CR>
 
 " Fugitive
 map <leader>gb :Gblame<CR>
-map <leader>gs :Gstatus<CR>
-map <leader>gd :Gdiff<CR>
-map <leader>gl :Glog<CR>
-map <leader>gc :Gcommit<CR>
-map <leader>gpu :Git pull --rebase<CR>
-map <leader>gps :Git push<CR>
 
 "Autocomplete
-"imap <tab> <c-x><c-o>
 inoremap <c-x><c-]> <c-]>
 
-nmap <leader>gr :Ggrep
-" ,gw for global git serach for word under the cursor (with highlight)
-nmap <leader>gw :let @/="\\<<C-R><C-W>\\>"<CR>:set hls<CR>:silent Ggrep -w "<C-R><C-W>"<CR>:ccl<CR>:cw<CR><CR>
-" same in visual mode
-vmap <leader>gw y:let @/=escape(@", '\\[]$^*.')<CR>:set hls<CR>:silent Ggrep -F "<C-R>=escape(@", '\\"#')<CR>"<CR>:ccl<CR>:cw<CR><CR>
-
+" Tag Rebuild
 map <Leader>rt :!/usr/local/bin/ctags -R -f .tags
 
 " Rspec
@@ -61,3 +47,9 @@ map <Leader>rf :call RunCurrentSpecFile()<CR>
 map <Leader>rl :call RunNearestSpec()<CR>
 map <Leader>rr :call RunLastSpec()<CR>
 map <Leader>ra :call RunAllSpecs()<CR>
+
+" Navigation
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l

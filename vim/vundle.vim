@@ -17,6 +17,7 @@ Bundle 'ervandew/supertab'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'thoughtbot/vim-rspec'
+Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on     " required!
 "

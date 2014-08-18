@@ -74,12 +74,8 @@ set smartcase                              " Switch to case sensitive mode if ne
 " DEFAULT COLOURS FOR VIM - GVIMRC OVERRIDES THIS
 "-------------------------------------------------
 
-colorscheme jellybeans-lucas
-set background=dark
-let g:jellybeans_background_color = 000000
-let g:jellybeans_background_color_256 = 0
-highlight Normal ctermbg=NONE
-highlight nonText ctermbg=NONE
+colorscheme solarized
+set background=light
 
 if has("mouse")
   set mouse=a
