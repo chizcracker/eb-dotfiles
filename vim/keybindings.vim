@@ -39,8 +39,8 @@ map <leader>gb :Gblame<CR>
 "Autocomplete
 inoremap <c-x><c-]> <c-]>
 
-" Tag Rebuild
-map <Leader>rt :!/usr/local/bin/ctags -R -f .tags
+" New  Tags
+map <Leader>rt :!bash -ic re-ctags
 
 " Rspec
 map <Leader>rf :call RunCurrentSpecFile()<CR>

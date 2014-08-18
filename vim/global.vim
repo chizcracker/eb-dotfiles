@@ -22,7 +22,7 @@ set linespace=3                            " Spacing between lines
 set noswapfile                             " Disable creation of *.swp files
 set t_Co=256                               " Support for xterm with 256 colors (gets overriden in .gvimrc)
 set autoread                               " Autoload files
-set tags+=.tags                            " Set ctags
+set tags+=tags                            " Set ctags
 set tags+=.gemtags                         " Set ctags
 set clipboard+=unnamed                     " Set system clipboard
 scriptencoding utf-8

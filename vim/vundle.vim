@@ -18,6 +18,12 @@ Bundle 'elixir-lang/vim-elixir'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'scrooloose/syntastic'
+Bundle 'othree/html5.vim'
+Bundle "pangloss/vim-javascript"
+Bundle "slim-template/vim-slim"
+Bundle "mustache/vim-mustache-handlebars"
 
 filetype plugin indent on     " required!
 "
@@ -29,4 +35,3 @@ filetype plugin indent on     " required!
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
-

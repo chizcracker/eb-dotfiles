@@ -4,6 +4,7 @@ source ~/.vim/keybindings.gui.vim
 " Font: Choose font and enable anti-aliasing
 set guifont=Monaco:h14
 set antialias
+highlight Normal guifg=white guibg=black
 
 " Use UTF-8 everywhere.
 set encoding=utf-8

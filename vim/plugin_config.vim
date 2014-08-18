@@ -12,7 +12,7 @@ let NERDTreeShowBookmarks = 1
 let NERDTreeShowHidden = 1
 
 " Don't hijack NETRW
-let NERDTreeHijackNetrw = 0
+let NERDTreeHijackNetrw = 1
 let NERDTreeIgnore=['\.$', '\~$', '.DS_Store']
 
 " RubyAndRails:
@@ -31,9 +31,21 @@ let g:ctrlp_clear_cache_on_exit   = 1
 let g:ctrlp_working_path_mode     = "ra"
 let g:ctrlp_match_window_reversed = 0
 
+let g:ctrlp_user_command = {
+      \ 'types': {
+         \ 1: ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others'],
+       \ },
+      \ 'fallback': 'find %s -type f'
+    \ }
+
+
 " SYNTAX
 " let g:syntastic_ruby_checkers=['rubylint']
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['javascript', 'coffee'] }
 
 
 " Rspec
 let g:rspec_command = "!bundle exec rspec -fd -d {spec}"
+
+" Let ack/vim use ag for search
+let g:ackprg = 'ag --nogroup --nocolor --column'

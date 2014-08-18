@@ -8,11 +8,19 @@ alias vi='vim'
 alias vim='mvim -v'
 alias tar='gtar'
 
-# noglob!
+
+# ruby
 alias be="bundle exec"
+
+git-files() {
+  git ls-tree --full-tree -r --name-only HEAD
+}
+
+re-ctags() {
+  ctags -f .tags -L $(git-files)
+}
 
 # set warning before jumping machines
 #
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
-
