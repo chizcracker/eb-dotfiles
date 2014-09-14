@@ -24,6 +24,7 @@ Bundle 'othree/html5.vim'
 Bundle "pangloss/vim-javascript"
 Bundle "slim-template/vim-slim"
 Bundle "mustache/vim-mustache-handlebars"
+Bundle "nanotech/jellybeans.vim"
 
 filetype plugin indent on     " required!
 "

@@ -45,7 +45,11 @@ let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['javascript
 
 
 " Rspec
-let g:rspec_command = "!bundle exec rspec -fd -d {spec}"
+let g:rspec_command = "!bundle exec rspec -fd --tty --color {spec}"
 
 " Let ack/vim use ag for search
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" Allow non solarized terms to use scheme
+let g:solarized_termcolors=256
+set background=dark
