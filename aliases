@@ -17,7 +17,10 @@ git-files() {
 }
 
 re-ctags() {
-  ctags -f .tags -L $(git-files)
+  if [ -f .tags ] ; then
+    rm .tags
+  fi
+  git-files | xargs ctags -a -f .tags -L
 }
 
 # set warning before jumping machines
